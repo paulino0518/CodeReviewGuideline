@@ -3,6 +3,7 @@ A basic code review guideline so I don't review my code arbitrarily.  The purpos
 
 #Conditionals
 - Does every if(){} have an else{}? | Problem: Silent errors
+- Works best with boolean results, but javascript is truthy, try to not use truthy conditionals
 
 #User input
 DO NOT TRUST USER INPUT.  SANITIZE IT, VALIDATE IT, AND MAKE IT FIT EXACTLY WHAT YOU EXPECT.
