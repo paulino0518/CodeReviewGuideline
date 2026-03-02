@@ -16,3 +16,6 @@ DO NOT TRUST USER INPUT.  SANITIZE IT, VALIDATE IT, AND MAKE IT FIT EXACTLY WHAT
 
 Libraries:
 - Most popular node public libraries like jsonwebtokens throw an error if a method like jwt.verify() fail, not a boolean.  So you can't use a if else statement.  You need to use the try catch block. OR use the error object if they include it in their callback function.
+
+# Express Specific
+- If using express.Router, different routers do not share the path parameters, you need the option { mergeParams: true }.  Only reason im adding it is because it got me recently.
